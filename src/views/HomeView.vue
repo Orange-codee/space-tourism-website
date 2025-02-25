@@ -50,7 +50,7 @@ main {
       display: flex;
       flex-direction: column;
       max-width: 540px;
-      border: 1px solid blue;
+      // border: 1px solid blue;
     }
     button.explore {
       height: 272px;

@@ -50,8 +50,7 @@ nav {
       background-color: rgba(255, 255, 255, 0.25);
     }
     div.links {
-      // flex: 1 0 auto;
-      flex-shrink: 0;
+      flex: 1 0 736px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -92,10 +91,9 @@ a.active {
         display: none;
       }
       div.links {
-        // flex-shrink: 1;
-        // color: red;
-        border: 1px solid yellow;
-        // padding-right: 40px;
+        flex: 1 1 640px;
+        // border: 1px solid yellow;
+        padding-right: 40px;
       }
     }
   }

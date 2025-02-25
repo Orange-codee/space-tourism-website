@@ -1,14 +1,15 @@
-# space-tourism-website
+# Frontend Mentor - Space-Tourism-Website
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+## Welcome! 👋
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Thanks for checking out this front-end coding challenge.
+This page is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Customize configuration
+## Built With
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+This page is built using HTML, SASS, and Vue 3.
 
 ## Project Setup
 

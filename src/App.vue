@@ -8,7 +8,7 @@ import NavBar from './components/NavBar.vue';
     <NavBar></NavBar>
   </header>
 
-  <RouterView :key="$route.fullPath" />
+  <RouterView />
 </template>
 
 <style></style>
