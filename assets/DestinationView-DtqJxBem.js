@@ -1,1 +1,0 @@
-import{o,a as s,c as t,b as n,d as a}from"./index-Ba7t8hOQ.js";const l={__name:"DestinationView",setup(r){return o(()=>document.querySelector("body").classList.add("des-desktop-bg")),s(()=>document.querySelector("body").classList.remove("des-desktop-bg")),(d,e)=>(a(),t("div",null,e[0]||(e[0]=[n("h1",null,"Des",-1)])))}};export{l as default};
