@@ -1,1 +1,0 @@
-import{o as e,a as o}from"./index-SA3N7thm.js";const n={__name:"TechnologyView",setup(t){return e(()=>document.querySelector("body").classList.add("tech-desktop-bg")),o(()=>document.querySelector("body").classList.remove("tech-desktop-bg")),(c,s)=>"Tech"}};export{n as default};

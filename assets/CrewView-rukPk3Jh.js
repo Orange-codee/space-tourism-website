@@ -1,1 +1,0 @@
-import{o as e,a as o}from"./index-SA3N7thm.js";const n={__name:"CrewView",setup(r){return e(()=>document.querySelector("body").classList.add("crew-desktop-bg")),o(()=>document.querySelector("body").classList.remove("crew-desktop-bg")),(t,s)=>"Crew"}};export{n as default};
