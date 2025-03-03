@@ -37,7 +37,7 @@ main {
   margin: 0 auto;
   padding: 128px 0px;
   div.homepage {
-    border: 1px solid brown;
+    // border: 1px solid brown;
     display: flex;
     // flex-direction: row;
     justify-content: space-between;

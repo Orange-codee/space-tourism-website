@@ -16,10 +16,12 @@
 .text-preset-3 {
   font-family: 'Bellefair';
   font-size: 56px;
+  font-weight: normal;
 }
 .text-preset-4 {
   font-family: 'Bellefair';
   font-size: 32px;
+  font-weight: normal;
 }
 .text-preset-5 {
   font-family: 'Barlow Condensed';
@@ -35,6 +37,7 @@
 .text-preset-7 {
   font-family: 'Barlow Condensed';
   font-size: 14px;
+  letter-spacing: 2px;
   font-weight: normal;
 }
 .text-preset-8 {
@@ -78,7 +81,7 @@
     font-size: 18px;
   }
   .text-preset-6 {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
   .text-preset-8 {
     font-size: 14px;
@@ -100,6 +103,12 @@
 .white {
   color: #ffffff;
 }
+
+.chapter {
+  letter-spacing: 4.72px;
+  opacity: 0.25;
+}
+
 /* 背景圖片 */
 .home-desktop-bg {
   background-image: url(./home/background-home-desktop.jpg);
