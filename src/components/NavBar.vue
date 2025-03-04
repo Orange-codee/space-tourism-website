@@ -77,7 +77,7 @@ onUnmounted(() => {
 
 //路由跳轉自動關閉選單
 watch(route, () => {
-  if (document.body.offsetWidth < 425) {
+  if (document.body.offsetWidth <= 425) {
     isOpen.value = false;
   }
 });
