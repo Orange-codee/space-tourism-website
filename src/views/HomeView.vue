@@ -10,9 +10,11 @@
           truly out of this world experience!</span
         >
       </section>
-      <button class="explore text-preset-4 blue-900" type="button" @click="goDestination">
-        EXPLORE
-      </button>
+      <div class="button">
+        <button class="explore text-preset-4 blue-900" type="button" @click="goDestination">
+          EXPLORE
+        </button>
+      </div>
     </div>
   </main>
 </template>
@@ -35,9 +37,10 @@ const goDestination = () => {
 main {
   // border: 1px solid rgb(163, 165, 42);
   // margin: 0 auto;
-  padding: 128px 0px;
+  padding: 128px 44px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   div.homepage {
     flex: 1 1 632px;
     // border: 1px solid brown;
@@ -47,7 +50,7 @@ main {
     align-items: flex-end;
     // height: 632px;
     max-width: 1110px;
-    margin: 0 auto;
+    // margin: 0 auto;
     section {
       flex-basis: 540px;
       display: flex;
@@ -112,9 +115,15 @@ main {
       section {
         flex-basis: 294px;
       }
-      button.explore {
-        height: 144px;
-        width: 144px;
+      div.button {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button.explore {
+          height: 144px;
+          width: 144px;
+        }
       }
     }
   }

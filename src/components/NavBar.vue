@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <div>
+    <div class="navbar">
       <img class="logo" src="@/assets/shared/logo.svg" alt="logo" />
       <span class="line"></span>
       <div class="links">
-        <RouterLink style="margin-left: 48px" class="text-preset-8 white" to="/"
+        <RouterLink class="text-preset-8 white" to="/"
           ><span style="letter-spacing: 2.7px" class="bold hometag">00 </span
           ><span>HOME</span></RouterLink
         >
@@ -86,9 +86,8 @@ watch(route, () => {
 <style scoped lang="scss">
 nav {
   padding-top: 40px;
-  div {
+  div.navbar {
     padding-left: 64px;
-    padding-right: 64px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -100,23 +99,27 @@ nav {
       // border: 1px solid yellow;
     }
     span.line {
-      flex: 1 1 560px;
+      flex: 1 2 560px;
       position: relative;
       z-index: 2;
-      left: 4%;
+      right: -4%;
       height: 1px;
       background-color: rgba(255, 255, 255, 0.25);
     }
     div.links {
+      padding-right: 64px;
       flex: 1 1 736px;
       display: flex;
       flex-direction: row;
-      // justify-content: flex-end;
+      gap: 48px;
+      justify-content: flex-end;
       align-items: center;
       // border: 1px solid red;
       background-color: rgb(255 255 255 / 0.05) /* #FFFFFF */;
       backdrop-filter: blur(80px);
       a {
+        display: flex;
+        gap: 12px;
         padding: 38.5px 0px;
         text-decoration: none;
         // margin-left: 48px;
@@ -151,10 +154,20 @@ nav {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  nav {
+    div.navbar {
+      span.line {
+        right: -1%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     padding-top: 0px;
-    div {
+    div.navbar {
       padding-left: 40px;
       padding-right: 0px;
       justify-content: space-between;
@@ -178,10 +191,30 @@ nav {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 767px) {
   nav {
     padding: 24px;
-    div {
+    div.navbar {
+      padding-left: 0px;
+      div.links {
+        padding-right: 0px;
+        gap: 12px;
+
+        a {
+          gap: 2px;
+          &:first-of-type {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav {
+    padding: 24px;
+    div.navbar {
       padding-left: 0px;
       div.links {
         display: none;
