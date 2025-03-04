@@ -108,7 +108,7 @@ nav {
       background-color: rgba(255, 255, 255, 0.25);
     }
     div.links {
-      flex: 1 0 736px;
+      flex: 1 1 736px;
       display: flex;
       flex-direction: row;
       // justify-content: flex-end;
@@ -178,7 +178,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 580px) {
   nav {
     padding: 24px;
     div {

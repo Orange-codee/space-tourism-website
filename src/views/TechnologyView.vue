@@ -96,9 +96,10 @@ main {
       align-items: center;
       // border: 1px solid yellow;
       div.indicators {
+        flex-basis: 144px;
         display: flex;
         flex-direction: column;
-        margin-right: 64px;
+        // margin-right: 64px;
         button.indicator {
           width: 80px;
           height: 80px;
@@ -108,7 +109,7 @@ main {
           background-color: transparent;
           color: #ffffff;
           cursor: pointer;
-          transition: all 1s ease;
+          transition: color 1s ease; // all
           &:hover {
             border: 1px solid rgba(255, 255, 255, 1);
           }
@@ -119,8 +120,9 @@ main {
         }
       }
       div.paragragh {
-        max-width: 491px;
-        margin-right: 32px;
+        flex-basis: 523px;
+        // max-width: 491px;
+        // margin-right: 32px;
         h1 {
           display: flex;
           flex-direction: column;
@@ -132,9 +134,24 @@ main {
         }
       }
       img {
-        width: 608px;
+        flex: 1 1 auto;
+        object-fit: cover;
+        min-width: 400px;
+        // flex-basis: 608px;
+        // max-width: 100%;
+        // height: auto;
+        // display: block;
       }
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  div.indicators {
+    display: flex;
+    flex-wrap: wrap; // 允許按鈕換行
+    justify-content: center; // 讓按鈕置中
+    gap: 10px; // 調整按鈕間距
+    margin-right: 0 !important; // 移除右邊空間
   }
 }
 
@@ -172,7 +189,7 @@ main {
         }
         img {
           order: -1;
-          // width: 768px;
+          flex-basis: auto;
           width: 100vw;
           height: auto;
           display: block;

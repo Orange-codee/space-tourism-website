@@ -34,22 +34,26 @@ const goDestination = () => {
 <style scoped lang="scss">
 main {
   // border: 1px solid rgb(163, 165, 42);
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 128px 0px;
+  display: flex;
+  flex-direction: column;
   div.homepage {
+    flex: 1 1 632px;
     // border: 1px solid brown;
     display: flex;
     // flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    height: 632px;
-    // width: 1110px;
+    // height: 632px;
     max-width: 1110px;
     margin: 0 auto;
     section {
+      flex-basis: 540px;
       display: flex;
       flex-direction: column;
-      max-width: 540px;
+      gap: 24px;
+      // max-width: 540px;
       // border: 1px solid blue;
     }
     button.explore {
@@ -92,6 +96,11 @@ main {
     div.homepage {
       flex-direction: column;
       align-items: center;
+      section {
+        flex-basis: 334px;
+        justify-content: space-between;
+        max-width: 512px;
+      }
     }
   }
 }
@@ -101,9 +110,7 @@ main {
     padding: 24px;
     div.homepage {
       section {
-        span.text-preset-1 {
-          margin: 24px 0;
-        }
+        flex-basis: 294px;
       }
       button.explore {
         height: 144px;
