@@ -163,6 +163,7 @@ main {
   main {
     padding: 24px;
     section {
+      min-height: unset;
       h2 {
         text-align: center;
       }

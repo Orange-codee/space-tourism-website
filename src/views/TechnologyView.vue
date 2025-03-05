@@ -165,6 +165,7 @@ main {
         justify-content: center;
         // border: 1px solid blue;
         div.indicators {
+          flex-basis: unset;
           flex-direction: row;
           margin-right: 0px;
           margin-bottom: 40px;
@@ -180,11 +181,16 @@ main {
           }
         }
         div.paragragh {
+          flex-basis: unset;
           text-align: center;
           margin-right: 0px;
+
           h1 {
             margin-bottom: 16px;
             // border: 1px solid green;
+          }
+          p {
+            max-width: 512px;
           }
         }
         img {
@@ -210,14 +216,20 @@ main {
       }
       article {
         div.indicators {
+          flex-basis: unset;
+
           button.indicator {
             width: 40px;
             height: 40px;
           }
         }
+        div.paragragh {
+          flex-basis: unset;
+        }
         img {
           // max-width: 425px;
           // min-height: 258px;
+          min-width: unset;
           width: 100vw;
           height: auto;
           display: block;
